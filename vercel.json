@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "Ramais.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Ramais.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "fontawesome/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Cofen.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "brasaoCofen.png",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Ramais.html"
+    }
+  ]
+}
