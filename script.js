@@ -4,7 +4,7 @@ function redirecionar(){
 
 async function fetchData() {
   try {
-      const response = await fetch('../data.json');
+      const response = await fetch('data.json');
       const data = await response.json();
       console.log("chegou aqui")
       return data;
